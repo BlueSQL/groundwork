@@ -59,6 +59,7 @@ BlueSQL은 아래의 범용 Linux 배포본을 지원한다.
 | BlueSQL 패키지 다운로드 유무 | 선택 | Y/N | Y이면 BlueSQL 패키지(Docker Image)를 다운로드 |
 | Docker 로그인 ID | 선택 | 문자열 | Docker Hub의 로그인 ID |
 | Docker 로그인 토큰 | 선택 | 문자열 | Docker Hub의 로그인 토큰 |
+| BlueSQL 패키지 버전 | 선택 | 문자열 | BlueSQL 패키지의 버전 |
 
 > 설치시에 입력이 필요하거나 중요한 텍스트는 <span style="color:green">녹색</span>으로 출력된다. 오류 메시지는 <span style="color:red">적색</span>으로 출력된다.
 
