@@ -149,7 +149,7 @@ function install_python {
 
 function install_packages_for_rocky {
     PACKAGES="openssh-server openssh-clients sudo iproute iputils net-tools firewalld tcpdump createrepo_c curl wget nmap-ncat pcp-system-tools mlocate ncdu ncurses vim-enhanced procps-ng htop jq oniguruma dos2unix tmux openssl-devel git rsync sshpass httpd rpm-build cmake make gcc-c++ gdb valgrind java-11-openjdk-devel bzip2"
-    MODULES="Flask passlib"
+    MODULES="Flask getmac passlib"
     echo -e "${GREEN}Install Rocky linux packages.${NC}"
     dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
     dnf install -y --allowerasing $PACKAGES
@@ -167,7 +167,7 @@ function install_packages_for_rocky {
 
 function install_packages_for_ubuntu {
     PACKAGES="kmod init systemd cron openssh-server sudo iputils-ping iproute2 net-tools firewalld tcpdump python3 python3-pip curl wget netcat jq dstat htop plocate ncdu vim jed"
-    MODULES="Flask passlib"
+    MODULES="Flask getmac passlib"
     echo -e "${GREEN}Install Ubuntu packages.${NC}"
     DEBIAN_FRONTEND=noninteractive apt-get install -y $PACKAGES
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --with-new-pkgs
